@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลอยกระทงออนไลน์</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌕 ลอยกระทงออนไลน์ 🎆</h1>
+        <p>พิมพ์คำอวยพรของคุณ แล้วกดปุ่มลอยกระทง</p>
+        <textarea id="wishInput" placeholder="พิมพ์คำอวยพรของคุณที่นี่..."></textarea>
+        <button onclick="launchKrathong()">ลอยกระทง</button>
+    </div>
+
+    <div id="river">
+        <!-- กระทงที่เคลื่อนที่ในแม่น้ำ -->
+    </div>
+
+    <div id="popup" class="hidden">
+        <p>🌕 กระทงของคุณได้ลอยไปแล้ว! 🎆</p>
+        <img src="krathong.png" alt="กระทง" />
+        <button onclick="closePopup()">ตกลง</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
